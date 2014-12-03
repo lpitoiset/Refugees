@@ -66,10 +66,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_pop_stats.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="fragment_pop_stats.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_pop_stats.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59681696" vertical-offset="0" max-vertical-offset="600">
+            <state vertical-scroll-proportion="-8.333333" vertical-offset="0" max-vertical-offset="600">
               <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
@@ -79,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CountryList.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CountryList.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/refugeesinfo/CountryList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="390">
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.037128713" vertical-offset="0" max-vertical-offset="404">
+              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -848,9 +848,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/countrylist.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/refugeesinfo/countrylist.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/refugeesinfo/PopStatsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/refugeesinfo/CountryList.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/refugeesinfo/DisplayMessageActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_pop_stats.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/refugeesinfo/CountryList.java" />
       </list>
     </option>
   </component>
@@ -1627,23 +1627,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/refugeesinfo/CountryList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_pop_stats.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59681696" vertical-offset="0" max-vertical-offset="600">
+        <state vertical-scroll-proportion="-8.333333" vertical-offset="0" max-vertical-offset="600">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/refugeesinfo/CountryList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.037128713" vertical-offset="0" max-vertical-offset="404">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
