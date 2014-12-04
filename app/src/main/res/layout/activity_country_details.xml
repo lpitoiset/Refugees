@@ -31,7 +31,7 @@
             android:layout_below="@+id/textName"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="29dp" />
+            android:layout_marginTop="20dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -42,7 +42,7 @@
             android:layout_below="@+id/textCode"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="29dp" />
+            android:layout_marginTop="20dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -53,7 +53,7 @@
             android:layout_below="@+id/textPopRef"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="29dp" />
+            android:layout_marginTop="20dp" />
 
 
         <TextView
@@ -65,7 +65,7 @@
             android:layout_below="@+id/textPopAsylum"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="29dp" />
+            android:layout_marginTop="20dp" />
 
 
         <TextView
@@ -77,7 +77,7 @@
             android:layout_below="@+id/textPopReturned"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="29dp" />
+            android:layout_marginTop="20dp" />
 
 
         <TextView
@@ -89,7 +89,7 @@
             android:layout_below="@+id/textPopIDP"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="29dp" />
+            android:layout_marginTop="20dp" />
 
 
         <TextView
@@ -101,7 +101,7 @@
             android:layout_below="@+id/textPopReturnedIDP"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="29dp" />
+            android:layout_marginTop="20dp" />
 
 
         <TextView
@@ -113,7 +113,7 @@
             android:layout_below="@+id/textPopStateless"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="29dp" />
+            android:layout_marginTop="20dp" />
 
 
 
@@ -125,10 +125,11 @@
             android:inputType="text"
             android:ems="10"
             android:id="@+id/editTextName"
-            android:layout_above="@+id/textName"
             android:layout_toRightOf="@+id/textName"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textName"
+            android:maxWidth="300dp" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -136,10 +137,10 @@
             android:inputType="text"
             android:ems="10"
             android:id="@+id/editTextCode"
-            android:layout_above="@+id/textName"
             android:layout_toRightOf="@+id/textCode"
             android:layout_alignRight="@+id/editTextName"
-            android:layout_alignEnd="@+id/editTextName" />
+            android:layout_alignEnd="@+id/editTextName"
+            android:layout_alignTop="@+id/textCode" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -147,11 +148,11 @@
             android:inputType="number"
             android:ems="10"
             android:id="@+id/editTextPopRef"
-            android:layout_alignBottom="@+id/textCode"
             android:layout_alignLeft="@+id/editTextName"
             android:layout_alignStart="@+id/editTextName"
             android:layout_alignRight="@+id/editTextName"
-            android:layout_alignEnd="@+id/editTextName" />
+            android:layout_alignEnd="@+id/editTextName"
+            android:layout_alignTop="@+id/textPopRef" />
 
 
         <EditText
@@ -160,11 +161,11 @@
             android:inputType="number"
             android:ems="10"
             android:id="@+id/editTextPopAsylum"
-            android:layout_alignBottom="@+id/textPopRef"
             android:layout_alignLeft="@+id/editTextName"
             android:layout_alignStart="@+id/editTextName"
             android:layout_alignRight="@+id/editTextName"
-            android:layout_alignEnd="@+id/editTextName" />
+            android:layout_alignEnd="@+id/editTextName"
+            android:layout_alignTop="@+id/textPopAsylum" />
 
 
         <EditText
@@ -173,11 +174,11 @@
             android:inputType="number"
             android:ems="10"
             android:id="@+id/editTextPopReturned"
-            android:layout_alignBottom="@+id/textPopAsylum"
             android:layout_alignLeft="@+id/editTextName"
             android:layout_alignStart="@+id/editTextName"
             android:layout_alignRight="@+id/editTextName"
-            android:layout_alignEnd="@+id/editTextName" />
+            android:layout_alignEnd="@+id/editTextName"
+            android:layout_alignTop="@+id/textPopReturned" />
 
 
         <EditText
@@ -186,11 +187,11 @@
             android:inputType="number"
             android:ems="10"
             android:id="@+id/editTextPopIDP"
-            android:layout_alignBottom="@+id/textPopReturned"
             android:layout_alignLeft="@+id/editTextName"
             android:layout_alignStart="@+id/editTextName"
             android:layout_alignRight="@+id/editTextName"
-            android:layout_alignEnd="@+id/editTextName" />
+            android:layout_alignEnd="@+id/editTextName"
+            android:layout_alignTop="@+id/textPopIDP" />
 
 
         <EditText
@@ -199,11 +200,11 @@
             android:inputType="number"
             android:ems="10"
             android:id="@+id/editTextPopReturnedIDP"
-            android:layout_alignBottom="@+id/textPopIDP"
             android:layout_alignLeft="@+id/editTextName"
             android:layout_alignStart="@+id/editTextName"
             android:layout_alignRight="@+id/editTextName"
-            android:layout_alignEnd="@+id/editTextName" />
+            android:layout_alignEnd="@+id/editTextName"
+            android:layout_alignTop="@+id/textPopReturnedIDP" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -211,11 +212,11 @@
             android:inputType="number"
             android:ems="10"
             android:id="@+id/editTextPopStateless"
-            android:layout_alignBottom="@+id/textPopReturnedIDP"
             android:layout_alignLeft="@+id/editTextName"
             android:layout_alignStart="@+id/editTextName"
             android:layout_alignRight="@+id/editTextName"
-            android:layout_alignEnd="@+id/editTextName" />
+            android:layout_alignEnd="@+id/editTextName"
+            android:layout_alignTop="@+id/textPopStateless" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -223,11 +224,11 @@
             android:inputType="number"
             android:ems="10"
             android:id="@+id/editTextPopOOC"
-            android:layout_alignBottom="@+id/textPopStateless"
             android:layout_alignLeft="@+id/editTextName"
             android:layout_alignStart="@+id/editTextName"
             android:layout_alignRight="@+id/editTextName"
-            android:layout_alignEnd="@+id/editTextName" />
+            android:layout_alignEnd="@+id/editTextName"
+            android:layout_alignTop="@+id/textPopOOC" />
 
         <Button
             android:layout_width="wrap_content"

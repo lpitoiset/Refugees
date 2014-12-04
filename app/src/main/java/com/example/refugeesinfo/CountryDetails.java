@@ -16,10 +16,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
+import android.app.Activity;
+
 
 import java.util.ArrayList;
 
-public class CountryDetails extends ActionBarActivity implements android.view.View.OnClickListener{
+public class CountryDetails extends Activity implements android.view.View.OnClickListener{
 
     Button btnSave ,  btnDelete;
     Button btnClose;
@@ -67,13 +69,13 @@ public class CountryDetails extends ActionBarActivity implements android.view.Vi
 
         editTextCode.setText(String.valueOf(country.code));
         editTextName.setText(country.name);
-        editTextPopRef.setText(country.pop_ref);
-        editTextPopAsylum.setText(country.pop_asylum);
-        editTextPopReturned.setText(country.pop_returned);
-        editTextPopIDP.setText(country.pop_idp);
-        editTextPopReturnedIDP.setText(country.pop_returned_idp);
-        editTextPopStateless.setText(country.pop_stateless);
-        editTextPopOOC.setText(country.pop_ooc);
+        editTextPopRef.setText(String.valueOf(country.pop_ref));
+        editTextPopAsylum.setText(String.valueOf(country.pop_asylum));
+        editTextPopReturned.setText(String.valueOf(country.pop_returned));
+        editTextPopIDP.setText(String.valueOf(country.pop_idp));
+        editTextPopReturnedIDP.setText(String.valueOf(country.pop_returned_idp));
+        editTextPopStateless.setText(String.valueOf(country.pop_stateless));
+        editTextPopOOC.setText(String.valueOf(country.pop_ooc));
     }
 
 
@@ -104,6 +106,13 @@ public class CountryDetails extends ActionBarActivity implements android.view.Vi
 //            country.age= Integer.parseInt(editTextAge.getText().toString());
             country.code=editTextCode.getText().toString();
             country.name=editTextName.getText().toString();
+            country.pop_ref=Integer.parseInt(editTextPopRef.getText().toString());
+            country.pop_asylum=Integer.parseInt(editTextPopAsylum.getText().toString());
+            country.pop_returned=Integer.parseInt(editTextPopReturned.getText().toString());
+            country.pop_idp=Integer.parseInt(editTextPopIDP.getText().toString());
+            country.pop_returned_idp=Integer.parseInt(editTextPopReturnedIDP.getText().toString());
+            country.pop_stateless=Integer.parseInt(editTextPopStateless.getText().toString());
+            country.pop_ooc=Integer.parseInt(editTextPopOOC.getText().toString());
             country.country_ID=_Country_Id;
 
             if (_Country_Id==0){
