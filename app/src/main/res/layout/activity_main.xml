@@ -65,4 +65,22 @@
             android:textColor="#ffffffff" />
     </TableRow>
 
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:baselineAligned="false">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:background="@color/button_material_dark"
+            android:onClick="gotoDBTest"
+            android:text="DB Test"
+            android:textColor="#ffffffff" />
+    </TableRow>
+
 </TableLayout>

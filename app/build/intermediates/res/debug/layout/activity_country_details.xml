@@ -1,0 +1,257 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.refugeesinfo.CountryDetails$PlaceholderFragment">
+
+
+
+        <!--tools:context="com.instinctcoder.sqlitedb.StudentDetail$PlaceholderFragment"-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Name"
+            android:id="@+id/textName"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Code"
+            android:id="@+id/textCode"
+            android:layout_below="@+id/textName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="29dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ref"
+            android:id="@+id/textPopRef"
+            android:layout_below="@+id/textCode"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="29dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Asylum"
+            android:id="@+id/textPopAsylum"
+            android:layout_below="@+id/textPopRef"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="29dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Returned"
+            android:id="@+id/textPopReturned"
+            android:layout_below="@+id/textPopAsylum"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="29dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="IDP"
+            android:id="@+id/textPopIDP"
+            android:layout_below="@+id/textPopReturned"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="29dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Returned IDP"
+            android:id="@+id/textPopReturnedIDP"
+            android:layout_below="@+id/textPopIDP"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="29dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Stateless"
+            android:id="@+id/textPopStateless"
+            android:layout_below="@+id/textPopReturnedIDP"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="29dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="OOC"
+            android:id="@+id/textPopOOC"
+            android:layout_below="@+id/textPopStateless"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="29dp" />
+
+
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/editTextName"
+            android:layout_above="@+id/textName"
+            android:layout_toRightOf="@+id/textName"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/editTextCode"
+            android:layout_above="@+id/textName"
+            android:layout_toRightOf="@+id/textCode"
+            android:layout_alignRight="@+id/editTextName"
+            android:layout_alignEnd="@+id/editTextName" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextPopRef"
+            android:layout_alignBottom="@+id/textCode"
+            android:layout_alignLeft="@+id/editTextName"
+            android:layout_alignStart="@+id/editTextName"
+            android:layout_alignRight="@+id/editTextName"
+            android:layout_alignEnd="@+id/editTextName" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextPopAsylum"
+            android:layout_alignBottom="@+id/textPopRef"
+            android:layout_alignLeft="@+id/editTextName"
+            android:layout_alignStart="@+id/editTextName"
+            android:layout_alignRight="@+id/editTextName"
+            android:layout_alignEnd="@+id/editTextName" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextPopReturned"
+            android:layout_alignBottom="@+id/textPopAsylum"
+            android:layout_alignLeft="@+id/editTextName"
+            android:layout_alignStart="@+id/editTextName"
+            android:layout_alignRight="@+id/editTextName"
+            android:layout_alignEnd="@+id/editTextName" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextPopIDP"
+            android:layout_alignBottom="@+id/textPopReturned"
+            android:layout_alignLeft="@+id/editTextName"
+            android:layout_alignStart="@+id/editTextName"
+            android:layout_alignRight="@+id/editTextName"
+            android:layout_alignEnd="@+id/editTextName" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextPopReturnedIDP"
+            android:layout_alignBottom="@+id/textPopIDP"
+            android:layout_alignLeft="@+id/editTextName"
+            android:layout_alignStart="@+id/editTextName"
+            android:layout_alignRight="@+id/editTextName"
+            android:layout_alignEnd="@+id/editTextName" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextPopStateless"
+            android:layout_alignBottom="@+id/textPopReturnedIDP"
+            android:layout_alignLeft="@+id/editTextName"
+            android:layout_alignStart="@+id/editTextName"
+            android:layout_alignRight="@+id/editTextName"
+            android:layout_alignEnd="@+id/editTextName" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextPopOOC"
+            android:layout_alignBottom="@+id/textPopStateless"
+            android:layout_alignLeft="@+id/editTextName"
+            android:layout_alignStart="@+id/editTextName"
+            android:layout_alignRight="@+id/editTextName"
+            android:layout_alignEnd="@+id/editTextName" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/btnSave"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/btnClose" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:id="@+id/btnClose"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:id="@+id/btnDelete"
+            android:layout_alignTop="@+id/btnSave"
+            android:layout_toLeftOf="@+id/btnSave" />
+
+    </RelativeLayout><!-- From: file:/Users/laurent/AndroidstudioProjects/RefugeesInfo/app/src/main/res/layout/activity_country_details.xml -->

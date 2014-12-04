@@ -184,6 +184,8 @@
     <string name="app_designer">Laurent Pitoiset</string>
     <string name="app_name">Refugees Info</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_country_details">New country</string>
+    <string name="title_activity_dbtest">DB Test</string>
     <string name="title_activity_display_message">Mon message</string>
     <string name="title_activity_operation_syria">Syria</string>
     <string name="title_activity_pop_stats">Population Statistics</string>

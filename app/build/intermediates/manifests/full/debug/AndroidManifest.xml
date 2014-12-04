@@ -62,6 +62,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.refugeesinfo.MainActivity" />
         </activity>
+        <activity
+            android:name="com.example.refugeesinfo.DBTestActivity"
+            android:label="@string/title_activity_dbtest"
+            android:parentActivityName="com.example.refugeesinfo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.refugeesinfo.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.refugeesinfo.CountryDetails"
+            android:label="@string/title_activity_country_details"
+            android:parentActivityName="com.example.refugeesinfo.DBTestActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.refugeesinfo.DBTestActivity" />
+        </activity>
     </application>
 
 </manifest>

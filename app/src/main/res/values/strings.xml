@@ -24,5 +24,7 @@
     <string name="title_section1">Time Series</string>
     <string name="title_section2">Demographics</string>
     <string name="title_section3">Asylum seekers</string>
+    <string name="title_activity_dbtest">DB Test</string>
+    <string name="title_activity_country_details">New country</string>
 
 </resources>

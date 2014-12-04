@@ -71,4 +71,13 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
+    /**
+     * Called when the user clicks the DB Test button
+     */
+    public void gotoDBTest(View view) {
+        Intent intent = new Intent(this, DBTestActivity.class);
+        startActivity(intent);
+    }
+
+
 }
