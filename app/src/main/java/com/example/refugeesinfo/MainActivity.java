@@ -56,9 +56,6 @@ public class MainActivity extends ActionBarActivity {
      */
     public void gotoSelectOperation(View view) {
         Intent intent = new Intent(this, SelectOperationActivity.class);
-        EditText editText = (EditText) findViewById(R.id.edit_message);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
 
@@ -76,6 +73,25 @@ public class MainActivity extends ActionBarActivity {
      */
     public void gotoDBTest(View view) {
         Intent intent = new Intent(this, DBTestActivity.class);
+        startActivity(intent);
+    }
+
+
+    /**
+     * Called when the user clicks the DB Test button
+     */
+    public void gotoMaps(View view) {
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
+    }
+
+
+
+    /**
+     * Called when the user clicks the DB Test button
+     */
+    public void gotoSettings(View view) {
+        Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
     }
 

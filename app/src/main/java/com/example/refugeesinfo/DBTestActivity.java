@@ -31,7 +31,7 @@ public class DBTestActivity extends ListActivity implements android.view.View.On
     @Override
     public void onClick(View view){
         if (view==findViewById(R.id.btnAdd)){
-            Intent intent = new Intent(this, CountryDetails.class);
+            Intent intent = new Intent(this, CountryView.class);
             intent.putExtra("country_Id", 0);
             startActivity(intent);
         }
@@ -45,7 +45,7 @@ public class DBTestActivity extends ListActivity implements android.view.View.On
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                         country_Id = (TextView) view.findViewById(R.id.country_Id);
                         String countryId = country_Id.getText().toString();
-                        Intent objIntent = new Intent(getApplicationContext(),CountryDetails.class);
+                        Intent objIntent = new Intent(getApplicationContext(),CountryView.class);
                         objIntent.putExtra("country_Id", Integer.parseInt(countryId));
                         startActivity(objIntent);
 
@@ -70,6 +70,28 @@ public class DBTestActivity extends ListActivity implements android.view.View.On
 
         btnGetAll = (Button) findViewById(R.id.btnGetAll);
         btnGetAll.setOnClickListener(this);
+
+        CountryRepo repo = new CountryRepo(this);
+        ArrayList<HashMap<String, String>> countryList = repo.getCountryList();
+        if (countryList.size()!=0){
+            ListView lv = getListView();
+            lv.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    country_Id = (TextView) view.findViewById(R.id.country_Id);
+                    String countryId = country_Id.getText().toString();
+                    Intent objIntent = new Intent(getApplicationContext(),CountryView.class);
+                    objIntent.putExtra("country_Id", Integer.parseInt(countryId));
+                    startActivity(objIntent);
+
+                }
+            });
+            ListAdapter adapter = new SimpleAdapter(DBTestActivity.this, countryList, R.layout.viewcountryentry, new String[] { "id", "name"}, new int[] {R.id.country_Id, R.id.country_name});
+            setListAdapter(adapter);
+        }
+        else{
+            Toast.makeText(this,"NO country",Toast.LENGTH_SHORT).show();
+        }
     }
 
 

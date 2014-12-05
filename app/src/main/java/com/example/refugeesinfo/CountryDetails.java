@@ -17,6 +17,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 import android.app.Activity;
+import java.text.DecimalFormat;
 
 
 import java.util.ArrayList;
@@ -68,6 +69,9 @@ public class CountryDetails extends Activity implements android.view.View.OnClic
         CountryRepo repo = new CountryRepo(this);
         Country country = new Country();
         country = repo.getCountryById(_Country_Id);
+
+        DecimalFormat formatter = new DecimalFormat("#,###,###");
+//        String yourFormattedString = formatter.format(100000);
 
         editTextCode.setText(String.valueOf(country.code));
         editTextName.setText(country.name);

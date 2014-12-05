@@ -24,7 +24,20 @@
     <string name="title_section1">Time Series</string>
     <string name="title_section2">Demographics</string>
     <string name="title_section3">Asylum seekers</string>
-    <string name="title_activity_dbtest">DB Test</string>
+    <string name="title_activity_dbtest">Population Statistics</string>
     <string name="title_activity_country_details">New country</string>
+    <string name="menu_country_details">Countries</string>
+    <string name="menu_operations_details">Operations</string>
+    <string name="menu_maps">Operational maps</string>
+    <string name="title_activity_maps">Maps</string>
+    <string name="title_activity_country_view">Country View</string>
+    <string name="label_ref">Refugees</string>
+    <string name="label_asylum">Asylum-seekers</string>
+    <string name="label_returned">Returned refugees</string>
+    <string name="label_idp">Internally displaced</string>
+    <string name="label_returned_idp">Returned IDP</string>
+    <string name="label_stateless">Stateless</string>
+    <string name="label_others">Others of Concern</string>
+    <string name="label_total">Total</string>
 
 </resources>
