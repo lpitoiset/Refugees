@@ -14,16 +14,18 @@ public class Country {
     public static final String KEY_pop_returned_idp = "returned_idp";
     public static final String KEY_pop_stateless = "stateless";
     public static final String KEY_pop_ooc = "others";
+    public static final String KEY_pop_total = "total";
 
     // property help us to keep data
     public int country_ID;
     public String name;
     public String code;
-    public int pop_ref;
-    public int pop_asylum;
-    public int pop_returned;
-    public int pop_idp;
-    public int pop_returned_idp;
-    public int pop_stateless;
-    public int pop_ooc;
+    public String pop_ref;
+    public String pop_asylum;
+    public String pop_returned;
+    public String pop_idp;
+    public String pop_returned_idp;
+    public String pop_stateless;
+    public String pop_ooc;
+    public String pop_total;
 }

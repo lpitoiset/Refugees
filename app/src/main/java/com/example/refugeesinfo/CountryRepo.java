@@ -31,6 +31,7 @@ public class CountryRepo {
         values.put(Country.KEY_pop_returned_idp, country.pop_returned_idp);
         values.put(Country.KEY_pop_stateless, country.pop_stateless);
         values.put(Country.KEY_pop_ooc, country.pop_ooc);
+        values.put(Country.KEY_pop_total, country.pop_total);
 
         // Inserting Row
         long Country_Id = db.insert(Country.TABLE, null, values);
@@ -61,6 +62,7 @@ public class CountryRepo {
         values.put(Country.KEY_pop_returned_idp, country.pop_returned_idp);
         values.put(Country.KEY_pop_stateless, country.pop_stateless);
         values.put(Country.KEY_pop_ooc, country.pop_ooc);
+        values.put(Country.KEY_pop_total, country.pop_total);
 
         // It's a good practice to use parameter ?, instead of concatenate string
         db.update(Country.TABLE, values, Country.KEY_ID + "= ?", new String[] { String.valueOf(country.country_ID) });
@@ -80,7 +82,8 @@ public class CountryRepo {
                 Country.KEY_pop_idp + "," +
                 Country.KEY_pop_returned_idp + "," +
                 Country.KEY_pop_stateless + "," +
-                Country.KEY_pop_ooc +
+                Country.KEY_pop_ooc + "," +
+                Country.KEY_pop_total +
                 " FROM " + Country.TABLE;
 
         //Country country = new Country();
@@ -102,6 +105,7 @@ public class CountryRepo {
                 country.put("pop_returned_idp", cursor.getString(cursor.getColumnIndex(Country.KEY_pop_returned_idp)));
                 country.put("pop_stateless", cursor.getString(cursor.getColumnIndex(Country.KEY_pop_stateless)));
                 country.put("pop_ooc", cursor.getString(cursor.getColumnIndex(Country.KEY_pop_ooc)));
+                country.put("pop_total", cursor.getString(cursor.getColumnIndex(Country.KEY_pop_total)));
                 countryList.add(country);
 
             } while (cursor.moveToNext());
@@ -125,7 +129,8 @@ public class CountryRepo {
                 Country.KEY_pop_idp + "," +
                 Country.KEY_pop_returned_idp + "," +
                 Country.KEY_pop_stateless + "," +
-                Country.KEY_pop_ooc +
+                Country.KEY_pop_ooc + "," +
+                Country.KEY_pop_total +
                 " FROM " + Country.TABLE
                 + " WHERE " +
                 Country.KEY_ID + "=?";// It's a good practice to use parameter ?, instead of concatenate string
@@ -140,13 +145,14 @@ public class CountryRepo {
                 country.country_ID =cursor.getInt(cursor.getColumnIndex(Country.KEY_ID));
                 country.name =cursor.getString(cursor.getColumnIndex(Country.KEY_name));
                 country.code =cursor.getString(cursor.getColumnIndex(Country.KEY_code));
-                country.pop_ref =cursor.getInt(cursor.getColumnIndex(Country.KEY_pop_ref));
-                country.pop_asylum =cursor.getInt(cursor.getColumnIndex(Country.KEY_pop_asylum));
-                country.pop_returned =cursor.getInt(cursor.getColumnIndex(Country.KEY_pop_returned));
-                country.pop_idp =cursor.getInt(cursor.getColumnIndex(Country.KEY_pop_idp));
-                country.pop_returned_idp =cursor.getInt(cursor.getColumnIndex(Country.KEY_pop_returned_idp));
-                country.pop_stateless =cursor.getInt(cursor.getColumnIndex(Country.KEY_pop_stateless));
-                country.pop_ooc =cursor.getInt(cursor.getColumnIndex(Country.KEY_pop_ooc));
+                country.pop_ref =cursor.getString(cursor.getColumnIndex(Country.KEY_pop_ref));
+                country.pop_asylum =cursor.getString(cursor.getColumnIndex(Country.KEY_pop_asylum));
+                country.pop_returned =cursor.getString(cursor.getColumnIndex(Country.KEY_pop_returned));
+                country.pop_idp =cursor.getString(cursor.getColumnIndex(Country.KEY_pop_idp));
+                country.pop_returned_idp =cursor.getString(cursor.getColumnIndex(Country.KEY_pop_returned_idp));
+                country.pop_stateless =cursor.getString(cursor.getColumnIndex(Country.KEY_pop_stateless));
+                country.pop_ooc =cursor.getString(cursor.getColumnIndex(Country.KEY_pop_ooc));
+                country.pop_total =cursor.getString(cursor.getColumnIndex(Country.KEY_pop_total));
 
             } while (cursor.moveToNext());
         }

@@ -34,6 +34,7 @@ public class CountryDetails extends Activity implements android.view.View.OnClic
     EditText editTextPopReturnedIDP;
     EditText editTextPopStateless;
     EditText editTextPopOOC;
+    EditText editTextPopTotal;
     private int _Country_Id=0;
 
     @Override
@@ -54,6 +55,7 @@ public class CountryDetails extends Activity implements android.view.View.OnClic
         editTextPopReturnedIDP = (EditText) findViewById(R.id.editTextPopReturnedIDP);
         editTextPopStateless = (EditText) findViewById(R.id.editTextPopStateless);
         editTextPopOOC = (EditText) findViewById(R.id.editTextPopOOC);
+        editTextPopTotal = (EditText) findViewById(R.id.editTextPopTotal);
 
         btnSave.setOnClickListener(this);
         btnDelete.setOnClickListener(this);
@@ -76,6 +78,7 @@ public class CountryDetails extends Activity implements android.view.View.OnClic
         editTextPopReturnedIDP.setText(String.valueOf(country.pop_returned_idp));
         editTextPopStateless.setText(String.valueOf(country.pop_stateless));
         editTextPopOOC.setText(String.valueOf(country.pop_ooc));
+        editTextPopTotal.setText(String.valueOf(country.pop_total));
     }
 
 
@@ -106,13 +109,15 @@ public class CountryDetails extends Activity implements android.view.View.OnClic
 //            country.age= Integer.parseInt(editTextAge.getText().toString());
             country.code=editTextCode.getText().toString();
             country.name=editTextName.getText().toString();
-            country.pop_ref=Integer.parseInt(editTextPopRef.getText().toString());
-            country.pop_asylum=Integer.parseInt(editTextPopAsylum.getText().toString());
-            country.pop_returned=Integer.parseInt(editTextPopReturned.getText().toString());
-            country.pop_idp=Integer.parseInt(editTextPopIDP.getText().toString());
-            country.pop_returned_idp=Integer.parseInt(editTextPopReturnedIDP.getText().toString());
-            country.pop_stateless=Integer.parseInt(editTextPopStateless.getText().toString());
-            country.pop_ooc=Integer.parseInt(editTextPopOOC.getText().toString());
+            country.pop_ref=editTextPopRef.getText().toString();
+            country.pop_asylum=editTextPopAsylum.getText().toString();
+            country.pop_returned=editTextPopReturned.getText().toString();
+            country.pop_idp=editTextPopIDP.getText().toString();
+            country.pop_returned_idp=editTextPopReturned.getText().toString();
+            country.pop_stateless=editTextPopStateless.getText().toString();
+            country.pop_ooc=editTextPopOOC.getText().toString();
+            country.pop_total=editTextPopTotal.getText().toString();
+//            country.pop_ooc=Integer.parseInt(editTextPopOOC.getText().toString());
             country.country_ID=_Country_Id;
 
             if (_Country_Id==0){
