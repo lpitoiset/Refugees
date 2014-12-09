@@ -15,23 +15,13 @@
         android:text="@string/abc_operation_syria" />
 
     <TextView
-        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="rss"
+        android:id="@+id/rssFeed"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:text="@string/abc_total_poc"
-        android:textSize="12dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/textView2"
-        android:layout_marginRight="47dp"
-        android:layout_marginTop="37dp"
-        android:text="@string/value_total_poc"
-        android:textAppearance="@color/highlighted_text_material_dark"
-        android:textSize="12dp" />
+        android:layout_marginTop="20dp" />
 </RelativeLayout>
