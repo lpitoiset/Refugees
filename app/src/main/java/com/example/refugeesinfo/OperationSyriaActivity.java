@@ -54,7 +54,7 @@ public class OperationSyriaActivity extends ActionBarActivity {
         finally {
             try{if(inputStream != null)inputStream.close();}catch(Exception squish){}
         }
-
+// .todo
         JSONObject jObject = new JSONObject(result);
         JSONArray jArray = jObject.getJSONArray("ARRAYNAME");
         for (int i=0; i < jArray.length(); i++)
